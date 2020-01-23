@@ -1,0 +1,39 @@
+.button {
+    border: none;
+    color: black;
+    padding: 2px;
+    padding-top: 0%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.2s;
+  }
+  
+  .button:hover {
+    background-color: rgb(27, 86, 197);
+    color: white;
+  }
+
+.class1 {
+  background-color: #7c7c7c;
+  color: #521919;
+}
+
+.class2{
+  background-color:#be1a1a;
+  color: white;
+}
+
+.cust-button {
+  height: 40px;
+  width: 100%;
+  background-color: #d43224;
+  color: white;
+}
+  

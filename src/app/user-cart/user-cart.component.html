@@ -1,0 +1,49 @@
+<div style="padding-top: 70px;">
+    <div class="container custom-container">
+        <div class="row" *ngFor="let item of cart_list">
+            <div class="col-md-3 shadow-sm" style="height:200px;text-align:center;padding-top:10px">
+                <img src="assets/images/iphone1.jpeg" height="180px">
+            </div>
+            <div class="col-md-9 shadow-sm" style="height:200px">
+                <div class="container" style="font-size: 20px;padding-top:5px">
+                    {{item['Mobiles']}}
+                </div>
+                <div class="container" style="font-size: 18px;padding-top:5px;color:green">
+                    {{item['Price_in_Rupees']}}
+                </div>
+                <div class="container" style="font-size: 18px;padding-top:5px;">
+                    Rating 4.7
+                </div>
+                <div class="container" style="font-size: 18px;padding-top:5px;">
+                    Delivery Address
+                </div>
+                <div class="container" style="font-size: 18px;padding-top:5px;">
+                    <div class="row">
+                        <button type="button" class="btn btn-primary cust-button" (click)="deletItem(item['S.No'])"
+                            style="border-radius: 0 !important;background-color:#f94e15"><strong>Delete</strong></button>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle cust-button"
+                                style="border-radius: 0 !important;background-color:#2874f0;border-color:#2874f0"
+                                type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <strong>Qty</strong>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">1</a>
+                                <a class="dropdown-item" href="#">2</a>
+                                <a class="dropdown-item" href="#">3</a>
+                                <a class="dropdown-item" href="#">4</a>
+                                <a class="dropdown-item" href="#">5</a>
+                                <a class="dropdown-item" href="#">5+</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" *ngIf="cart_list.length <= 0">
+            Your cart list is empty!!
+            <button routerLink="/home">Continue Shopping</button>
+        </div>
+    </div>
+</div>

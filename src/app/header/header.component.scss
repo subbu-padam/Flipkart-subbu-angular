@@ -1,0 +1,32 @@
+* {
+    padding: 0px;
+    border: 0px;
+}
+  
+.nav-item {
+    color: white;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+.nav-item:hover {
+    color: black;  
+}
+
+.search-icon {
+    margin-top: 3px !important;
+    margin-left: -35px !important;
+    color: steelblue;
+}
+
+.cart-value {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    margin-top: -40px;
+    margin-left: 10px;
+    color: white;
+    z-index: 1 !important;
+    position: relative;
+}

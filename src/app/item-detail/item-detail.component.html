@@ -1,0 +1,64 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-1 container" style="height:400px;text-align:center">
+            <div class="col-md-12 nopadding">
+                <div style="height:100px ">
+                    <img src="assets/images/iphone1.jpeg" height="95px">
+                </div>
+                <div style="height:100px ">
+                    <img src="assets/images/iphone2.jpeg" height="95px">
+
+                </div>
+                <div style="height:100px ">
+                    <img src="assets/images/iphone3.jpeg" height="95px">
+
+                </div>
+                <div style="height:100px ">
+                    <img src="assets/images/iphone4.jpeg" height="95px">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4" style="height:400px;text-align:center">
+            <div><img src="assets/images/iphone1.jpeg" height="400px"></div>
+        </div>
+        <div class="col-md-7 detail-title">
+            <div *ngFor="let key of item_keys; let ind=index">
+                <div class="row">
+                <span style="font-weight: bold;">{{key}}: &nbsp;</span> <span style="font-size:  16px;">{{item_values[ind]}}</span>
+                </div>
+            </div>
+            <!-- <br>
+
+            <div class="shadow-sm" style="padding:20px">
+
+                <div style="padding:5px;font-size:18px ">Rating 4.7</div>
+                <div style="padding:5px;font-size:18px ;color: green;">₹99,900</div>
+                <div style="padding:5px;font-size:18px ">Delivery
+                    <input>
+                </div>
+                <div style="padding:5px;font-size:18px">
+                    Spectifications
+                    <ul>
+                        <li style="font-size: 14px">64GB ROM</li>
+                        <li style="font-size: 14px">14.73 cm (5.8 inch) Super Retina XDR Display</li>
+                        <li style="font-size: 14px">12MP + 12MP + 12MP | 12MP Front Camera</li>
+                        <li style="font-size: 14px">A13 Bionic Chip Processor</li>
+                    </ul>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+
+<div class="row" style="padding-top: 20px;padding-left:170px">
+    <div class="col-md-2">
+        <button class="cust-button">+ Add to Cart</button>
+        
+    </div>
+    <div class="col-md-2"> 
+        <button class="cust-button">Buy now</button>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<a routerLink="/usercart">
+    <li class="nav-item"> 
+        <div>
+            <div>
+                <i class="material-icons icon-color">shopping_cart</i>
+            </div>  
+            <div *ngIf="cart_value > 0" class="cart-value d-flex justify-content-center"> {{cart_value}}</div>
+        </div> 
+    </li>
+</a>

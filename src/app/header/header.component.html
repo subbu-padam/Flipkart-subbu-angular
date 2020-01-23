@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-sm  navbar-dark bg-primary text-white fixed-top">
+    <!-- Brand/logo -->
+    <a class="navbar-brand ml-4" routerLink="/home">
+        <p style="font-size: 20px;"><i>Shopping Cart</i></p>
+    </a>
+
+    <!-- <form class="form-inline" action="#"> -->
+    <input class="form-control mr-sm-2" [(ngModel)]="searchvalue" style="width: 500px;" type="text"
+        placeholder="Search" />
+    <i class="material-icons search-icon">search</i>
+    <!-- </form> -->
+
+    <!-------Unordered list--->
+    <ul class="navbar-nav ml-auto">
+        <a routerLink="/home">
+            <li class="nav-item">Home</li>
+        </a>
+        <a (click)="rote_to_home_page()">
+            <li class="nav-item">Home using fun</li>
+        </a>
+        <app-cart-value [value]="cart_value" [value1]="'hello'"></app-cart-value>
+    </ul>
+</nav>
